@@ -3,207 +3,146 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Juan David Moreno | Portafolio</title>
 
-  <!-- *bootstrap pa no usar css* -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<!-- *fondo oscuro y texto claro* -->
 <body class="bg-dark text-light">
 
-<!-- *inicio / perfil* -->
 <div class="container text-center mt-5">
-
-  <!-- *mi foto* -->
-  <img src="juan.jpeg"
-       class="rounded-circle border border-info"
-       style="width:150px; height:150px; object-fit:cover;">
-
+  <img src="juan.jpeg" class="rounded-circle border border-info" style="width:150px; height:150px; object-fit:cover;">
   <h1 class="mt-3">Juan David Moreno Carpio</h1>
   <p class="text-secondary">Desarrollador de Software | SENA ADSO</p>
 
-  <!-- *carousel pero pa mostrar info mia* -->
   <div id="carouselExample" class="carousel slide mt-4">
-
     <div class="carousel-inner text-center">
-
       <div class="carousel-item active">
         <h5>Apasionado por el desarrollo</h5>
         <p>Me gusta crear soluciones reales con código</p>
       </div>
-
       <div class="carousel-item">
         <h5>Backend con Python</h5>
         <p>Experiencia con Flask</p>
       </div>
-
       <div class="carousel-item">
         <h5>En constante aprendizaje</h5>
         <p>Siempre mejorando</p>
       </div>
-
     </div>
-
-    <!-- *botones del carousel* -->
-    <button class="carousel-control-prev" type="button"
-      data-bs-target="#carouselExample"
-      data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
-
-    <button class="carousel-control-next" type="button"
-      data-bs-target="#carouselExample"
-      data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
-
   </div>
-
 </div>
 
-<!-- *proyectos* -->
 <div class="container mt-5">
-
   <h2 class="text-center">Proyectos</h2>
+  <div class="row justify-content-center">
 
-  <!-- *centrar cards* -->
-<div class="row justify-content-center">
-
-  <!-- *card 1* -->
-  <div class="col-auto">
-    <div class="card mt-3" style="width: 18rem;">
-
-      <img src="https://agenciawinners.com/wp-content/uploads/2020/07/desarrollo-web.png"
-           class="card-img-top"
-           style="height: 200px; object-fit: cover;">
-
-      <div class="card-body">
-        <h5 class="card-title">CanchaYa</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Flask + MySQL</h6>
-        <p class="card-text">
-          Sistema de gestión y reserva de escenarios deportivos.
-        </p>
-        <a href="#" class="card-link">Repositorio</a>
-        <a href="#" class="card-link">Demo</a>
+    <div class="col-auto">
+      <div class="card mt-3 text-dark" style="width: 18rem;">
+        <img src="https://agenciawinners.com/wp-content/uploads/2020/07/desarrollo-web.png" class="card-img-top" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">CanchaYa</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Flask + MySQL</h6>
+          <p class="card-text">Sistema de gestión y reserva de escenarios deportivos.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary">Repositorio</a>
+          <button type="button" class="btn btn-sm btn-info text-white" data-bs-toggle="modal" data-bs-target="#modalCanchaYa">
+            Ver más
+          </button>
+        </div>
       </div>
+    </div>
 
+    <div class="col-auto">
+      <div class="card mt-3 text-dark" style="width: 18rem;">
+        <img src="https://www.tobbyazilim.org/wp-content/uploads/2023/09/anasayfa-kutu-2.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Calculadora Flask</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Python + HTML</h6>
+          <p class="card-text">Aplicación web con lógica en el servidor.</p>
+          <a href="#" class="card-link">Repositorio</a>
+          <a href="#" class="card-link">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-auto">
+      <div class="card mt-3 text-dark" style="width: 18rem;">
+        <img src="https://picsum.photos/300/203" class="card-img-top" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Mi Primera Web</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">HTML y CSS</h6>
+          <p class="card-text">Un sitio web básico creado para practicar estructura.</p>
+          <a href="#" class="card-link">Repositorio</a>
+          <a href="#" class="card-link">Demo</a>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- *card 2* -->
-  <div class="col-auto">
-    <div class="card mt-3" style="width: 18rem;">
-
-      <img src="https://www.tobbyazilim.org/wp-content/uploads/2023/09/anasayfa-kutu-2.jpg"
-           class="card-img-top"
-           style="height: 200px; object-fit: cover;">
-
-      <div class="card-body">
-        <h5 class="card-title">Calculadora Flask</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Python + HTML</h6>
-        <p class="card-text">
-          Aplicación web con lógica en el servidor.
-        </p>
-        <a href="#" class="card-link">Repositorio</a>
-        <a href="#" class="card-link">Demo</a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- *card 3 * -->
-  <div class="col-auto">
-    <div class="card mt-3" style="width: 18rem;">
-
-      <img src="https://picsum.photos/300/203"
-           class="card-img-top"
-           style="height: 200px; object-fit: cover;">
-
-      <div class="card-body">
-        <h5 class="card-title">Mi Primera Web</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">
-          HTML y CSS
-        </h6>
-        <p class="card-text">
-          Un sitio web básico creado para practicar la estructura de etiquetas 
-        y el diseño de texto en el navegador.
-        </p>
-        <a href="#" class="card-link">Repositorio</a>
-        <a href="#" class="card-link">Demo</a>
-      </div>
-
-    </div>
-  </div>
-
 </div>
 
-<!-- *habilidades* -->
 <div class="container mt-5">
-
   <h2>Habilidades</h2>
-
-  <!-- *accordion de bootstrap* -->
   <div class="accordion" id="accordionExample">
-
-    <!-- *frontend* -->
-    <div class="accordion-item">
+    <div class="accordion-item text-dark">
       <h2 class="accordion-header">
-        <button class="accordion-button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseOne">
-          Frontend
-        </button>
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Frontend</button>
       </h2>
-
       <div id="collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          HTML, CSS y JavaScript
-        </div>
+        <div class="accordion-body">HTML, CSS y JavaScript</div>
       </div>
     </div>
-
-    <!-- *backend* -->
-    <div class="accordion-item">
+    <div class="accordion-item text-dark">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo">
-          Backend
-        </button>
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Backend</button>
       </h2>
-
       <div id="collapseTwo" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          Python y Flask
-        </div>
+        <div class="accordion-body">Python y Flask</div>
       </div>
     </div>
-
   </div>
-
 </div>
 
-<!-- *contacto* -->
 <div class="container mt-5 text-center">
-
   <h2>Contacto</h2>
-
   <div class="row mt-3">
     <div class="col">📧 juandavimorenocarpio4@gmail.com</div>
     <div class="col">📱 3042101815</div>
   </div>
-
 </div>
 
-<!-- *footer* -->
 <footer class="text-center mt-5 p-3 border-top">
   <p class="mb-0">© 2026 Juan David Moreno Carpio</p>
 </footer>
 
-<!-- *js pa que funcione carousel y accordion* -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="modalCanchaYa" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark border-info text-light">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title">Detalles de CanchaYa</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Este es el modal de tu proyecto. Aquí puedes poner:</p>
+        <ul>
+          <li>Descripción técnica del proyecto.</li>
+          <li>Capturas de pantalla adicionales.</li>
+          <li>Logros o retos superados.</li>
+        </ul>
+      </div>
+      <div class="modal-footer border-secondary">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
