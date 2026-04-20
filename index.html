@@ -137,11 +137,32 @@
   </div>
 </div>
 
-<div class="container mt-5 text-center" id="contacto">
-  <h2>Contacto</h2>
-  <div class="row mt-3">
-    <div class="col">📧 juandavimorenocarpio4@gmail.com</div>
-    <div class="col">📱 3042101815</div>
+<div class="container mt-5 py-5" id="contacto">
+  <h2 class="text-center mb-4">Contacto</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form class="p-4 border border-secondary rounded bg-dark shadow">
+        <div class="mb-3">
+          <label for="nombre" class="form-label text-info">Nombre Completo</label>
+          <input type="text" class="form-control bg-dark text-light border-secondary" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-info">Correo Electrónico</label>
+          <input type="email" class="form-control bg-dark text-light border-secondary" id="email" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label text-info">Mensaje</label>
+          <textarea class="form-control bg-dark text-light border-secondary" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-info text-white">Enviar Mensaje</button>
+        </div>
+      </form>
+      <div class="mt-4 text-center">
+        <p class="mb-1 small">📧 juandavimorenocarpio4@gmail.com</p>
+        <p class="small">📱 3042101815</p>
+      </div>
+    </div>
   </div>
 </div>
 
